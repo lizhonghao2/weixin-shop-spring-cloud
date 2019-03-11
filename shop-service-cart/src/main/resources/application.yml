@@ -9,9 +9,9 @@ spring:
     # Redis数据库索引（默认为0）
     database: 0
     # Redis服务器地址
-    host: 115.29.47.207
+    host: 127.0.0.1
     # Redis服务器连接端口
-    port: 6677
+    port: 6379
     # Redis服务器连接密码（默认为空）
     password:
     # 连接超时时间（毫秒）
@@ -28,7 +28,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka.didispace.com/eureka/
+      defaultZone: http://localhost:6001/eureka/
 
 # 日志
 logging:

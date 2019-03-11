@@ -5,7 +5,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka.didispace.com/eureka/
+      defaultZone: http://localhost:6001/eureka/
 
 spring:
   application:
@@ -15,7 +15,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/wx-shop
     username: root
-    password: root
+    password: 123456
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
@@ -34,7 +34,7 @@ spring:
       # 连接属性
       connection-properties: clientEncoding=UTF-8
   rabbitmq:
-    host: 115.29.47.207
+    host: 127.0.0.1
     port: 5672
     virtualHost: /test
     username: chengzhx76
